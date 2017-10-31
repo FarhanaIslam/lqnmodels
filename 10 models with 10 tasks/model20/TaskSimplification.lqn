@@ -1,0 +1,41 @@
+G
+"lqngen -A10 -P10 -L3 -C1 -Y1 -s0.5 -c15 -M9"
+1.0E-5
+50
+10
+0.9
+-1
+
+P 0
+p c0 s 0.01
+p mergedProcessor0 s 0.01 m 7
+p mergedProcessor1 s 0.01 m 11
+p p2 s 0.01 m 2
+p p5 s 0.01
+p p8 s 0.01
+-1
+
+T 0
+t MergedTask0 n mergedEntry0  -1 mergedProcessor0  m 5
+t MergedTask1 n mergedEntry1  -1 mergedProcessor1  m 4
+t c0 r c0  -1 c0  m 11
+t t2 n e2_0  -1 p2  m 2
+t t5 n e5_0  -1 p5 
+t t8 n e8_0  -1 p8 
+-1
+
+E 0
+s c0 0.860846 -1
+y c0 e2_0 1.37621 -1
+y c0 mergedEntry1 2.2419689 -1
+s e2_0 0.291708 -1
+y e2_0 e5_0 2.25613 -1
+y e2_0 mergedEntry0 0.21 -1
+s e5_0 0.292605 -1
+y e5_0 e8_0 0.181842 -1
+s e8_0 1.13144 -1
+s mergedEntry0 2.1786337 -1
+s mergedEntry1 0.26659796 -1
+y mergedEntry1 mergedEntry0 0.09645676 -1
+-1
+
